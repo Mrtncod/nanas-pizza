@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/manrope-latin-500-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/manrope-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Typography */
+  --font-sans: "Manrope", sans-serif;
+
+  /* Backgrounds */
+  --color-ivory: #f6f5f2;
+  /* --color-ivory: #fff8ee; */
+  --color-cream: #fffcf7;
+
+  /* Primary — Tomato */
+  --color-tomato-400: #e96855;
+  --color-tomato-500: #d94f3d;
+  --color-tomato-600: #b93d30;
+
+  /* Secondary — Basil */
+  --color-basil-400: #6b9171;
+  --color-basil-500: #527a5a;
+  --color-basil-600: #416448;
+
+  /* Accent — Golden */
+  --color-golden-400: #dfa13a;
+  --color-golden-500: #c88920;
+  --color-golden-600: #a96d13;
+  /* --color-golden-400: #e6ad43;
+  --color-golden-500: #d99a2b;
+  --color-golden-600: #bd811c; */
+
+  /* Typography */
+  --color-espresso: #2b2520;
+  --color-dark-espresso: #1f1a17;
+  --color-warm-gray: #6f665e;
+  --color-muted: #978d83;
+
+  /* Borders */
+  --color-warm-border: #e8ded2;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scrollbar-gutter: stable; */
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ivory);
+  color: var(--color-espresso);
+  font-family: var(--font-sans);
+}
